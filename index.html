@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->    
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <title>milkbox</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/tracklist.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/grid.css"/>
+    <script defer src="./lib/titlebar.js"></script>
+    <script defer src="./lib/playback.js"></script>
+    <script defer src="./lib/tracks.js"></script>
+  </head>
+  <body>
+    <div id="grid">
+      <div id="album"><img id="albumcover" src="no_album.png"></div>
+      <div id="player"></div>
+      <div id="header"><table id="tracklist-header"></table></div>
+      <div id="list"><table id="tracklist"></table></div>
+    </div>
+  </body>
+</html>
