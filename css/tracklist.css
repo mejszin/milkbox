@@ -1,4 +1,4 @@
-#tracklist, #tracklist-header {
+#tracklist, #tracklist-header, #tracklist-footer {
     width: 100vw;
     border-collapse: collapse;
 }
@@ -26,7 +26,7 @@
 }
 
 audio, audio::-webkit-media-controls-panel {
-    background-color: rgb(255, 255, 255); /*rgba(241, 243, 244, 1);*/
+    background-color: rgba(255, 255, 255, 1); /*rgba(241, 243, 244, 1);*/
     width: 100%;
 }
 
