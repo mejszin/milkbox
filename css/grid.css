@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     border-top: 1px solid #CFCFCF;
+    border-left: 1px solid #CFCFCF;
 }
 
 #header {
@@ -27,15 +28,6 @@
     overflow-y: scroll;
 }
 
-#marquee {
-    grid-area: marquee;
-    font-family: sans-serif;
-    font-size: 0.65em;
-    display: flex;
-    align-items: center;
-    border: 1px solid #CFCFCF;
-}
-
 #footer {
     grid-area: footer;
     display: flex;
@@ -47,11 +39,11 @@
 #grid {
     display: grid;
     height: calc(100vh - 30px);
-    grid-template-columns: 80px 160px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: 24px 1fr 56px 24px;
     grid-template-areas:
-        "header header header"
-        "list list list"
-        "album player player"
-        "album marquee footer";
+        "header header"
+        "list list"
+        "album player"
+        "album footer";
 }

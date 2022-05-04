@@ -17,16 +17,33 @@
     padding: 0 12px;
     letter-spacing: 1px;
     border-right: 1px solid #CFCFCF;
+    text-transform: lowercase;
 }
 
 #tracklist td {
     font-family: sans-serif;
     font-size: 0.65em;
     padding: 4px 12px;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+
+#tracklist-footer td {
+    font-family: sans-serif;
+    font-size: 0.65em;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    border-right: 1px solid #CFCFCF;
+}
+
+td#marquee {
+    width: 160px;
+    padding: 0 0;
+    text-transform: lowercase;
 }
 
 audio, audio::-webkit-media-controls-panel {
-    background-color: rgba(255, 255, 255, 1); /*rgba(241, 243, 244, 1);*/
+    background-color: #ffffff; /*rgba(241, 243, 244, 1);*/
     width: 100%;
 }
 
@@ -48,10 +65,6 @@ td.year {
 
 td.genres {
     width: 25%;
-}
-
-#tracklist td.genres {
-    font-size: 0.65em;
 }
 
 td.track_no {

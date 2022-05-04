@@ -4,8 +4,8 @@ const { app, BrowserWindow, globalShortcut } = require('electron');
 
 const createWindow = () => {
     const window = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1000,
+        height: 480,
         frame: false,
         titleBarStyle: "hidden",
         webPreferences: {
@@ -14,7 +14,7 @@ const createWindow = () => {
             enableRemoteModule: true,
         }
     })
-    window.toggleDevTools()
+    // window.toggleDevTools()
     window.loadFile('index.html')
     // Keyboard Shortcuts
     globalShortcut.register('MediaPlayPause', () => {
