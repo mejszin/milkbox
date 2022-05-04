@@ -1,0 +1,7 @@
+body {
+    user-select: none;
+}
+
+.window-title {
+    font-family: sans-serif;
+}

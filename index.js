@@ -14,7 +14,7 @@ const createWindow = () => {
             enableRemoteModule: true,
         }
     })
-//  window.toggleDevTools()
+    window.toggleDevTools()
     window.loadFile('index.html')
     // Keyboard Shortcuts
     globalShortcut.register('MediaPlayPause', () => {

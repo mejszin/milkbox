@@ -1,2 +1,4 @@
 node_modules
 metadata_example.json
+spotify_client_id
+spotify_client_secret
