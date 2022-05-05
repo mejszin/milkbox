@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->    
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <title>milkbox</title>
+    <link rel="icon" type="image/x-icon" href="../data/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/tracklist.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/grid.css"/>
+    <script defer src="../lib/titlebar.js"></script>
+    <script defer src="../lib/spotify.js"></script>
+    <script defer src="../lib/playback.js"></script>
+    <script defer src="../lib/tracks.js"></script>
+  </head>
+  <body>
+    <div id="grid">
+      <div id="album"><img id="albumcover" src="../data/no_album.png"></div>
+      <div id="player"></div>
+      <div id="header"><table id="tracklist-header"></table></div>
+      <div id="list"><table id="tracklist"></table></div>
+      <div id="footer">
+        <table id="tracklist-footer">
+          <td id="marquee"><marquee id="now-playing" scrollamount="2"></marquee></td>
+          <td id="all-tracks"><a onclick="displayTracksPage()">All</a></td>
+          <td id="albums"><a onclick="displayAlbumsPage()">Albums</a></td>
+          <td id="playlists"><a onclick="displayPlaylistsPage()">Playlists</a></td>
+          <td id="total-tracks">0 tracks</td>
+          <td id="total-duration">0 minutes</td>
+          <td></td>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

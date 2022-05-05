@@ -20,6 +20,10 @@
     text-transform: lowercase;
 }
 
+#tracklist-header td:last-child {
+    border-right: none;
+}
+
 #tracklist td {
     font-family: sans-serif;
     font-size: 0.65em;
@@ -59,4 +63,30 @@ td.genres {
 
 td.duration {
     width: 8%;
+}
+
+td.album_cover {
+    width: 10%;
+    padding: 2px 12px;
+}
+
+td.album_cover img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+td.album_name {
+    width: 30%;
+}
+
+td.album_artist {
+    width: 30%;
+}
+
+td.album_track_count {
+    width: 10%;
+}
+
+td.album_duration {
+    width: 20%;
 }

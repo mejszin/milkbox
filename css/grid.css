@@ -32,8 +32,7 @@
     grid-area: footer;
     display: flex;
     align-items: center;
-    border-top: 1px solid #CFCFCF;
-    border-bottom: 1px solid #CFCFCF;
+    border: 1px solid #CFCFCF;
 }
 
 #grid {
