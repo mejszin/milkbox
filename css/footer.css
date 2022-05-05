@@ -28,7 +28,7 @@ td#marquee {
 }
 
 #all-tracks, #albums, #playlists {
-    color: blueviolet;
+    color: black;
     text-decoration: underline;
     cursor: pointer;
 }

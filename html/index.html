@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/tracklist.css"/>
     <link rel="stylesheet" type="text/css" href="../css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="../css/grid.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script defer src="../lib/titlebar.js"></script>
     <script defer src="../lib/spotify.js"></script>
     <script defer src="../lib/playback.js"></script>
@@ -24,9 +25,15 @@
       <div id="footer">
         <table id="tracklist-footer">
           <td id="marquee"><marquee id="now-playing" scrollamount="2"></marquee></td>
-          <td id="all-tracks"><a onclick="displayTracksPage()">All</a></td>
-          <td id="albums"><a onclick="displayAlbumsPage()">Albums</a></td>
-          <td id="playlists"><a onclick="displayPlaylistsPage()">Playlists</a></td>
+          <td id="all-tracks">
+            <a onclick="displayTracksPage()"><i class="fa-solid fa-bars"></i></a>
+          </td>
+          <td id="albums">
+            <a onclick="displayAlbumsPage()"><i class="fa-solid fa-compact-disc"></i></a>
+          </td>
+          <td id="playlists">
+            <a onclick="displayPlaylistsPage()"><i class="fa-solid fa-star"></i></a>
+          </td>
           <td id="total-tracks">0 tracks</td>
           <td id="total-duration">0 minutes</td>
           <td></td>
