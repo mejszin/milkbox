@@ -1,7 +1,7 @@
 # milkbox
 Local music client
 
-![./data/screenshot.png](Screenshot)
+![Screenshot](./data/screenshot.png)
 
 ---
 
