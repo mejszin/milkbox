@@ -2,15 +2,15 @@
     {
         "name": "Calm",
         "tracks": [
-            "/Biig Piig - No Place for Patience, Vol. 3/2_shh.mp3"
+            "../../music/Biig Piig - No Place for Patience, Vol. 3/2_shh.mp3"
         ]
     },
     {
         "name": "French",
         "tracks": [
-            "/Monaldin - Femme Like U/monaldin_femme_like_u.mp3",
-            "/Pomme - À peu près/ceux_qui_revent.mp3",
-            "/Requin Chagrin - Sémaphore/requin_chagrin_semaphore.mp3"
+            "../../music/Monaldin - Femme Like U/monaldin_femme_like_u.mp3",
+            "../../music/Pomme - À peu près/ceux_qui_revent.mp3",
+            "../../music/Requin Chagrin - Sémaphore/requin_chagrin_semaphore.mp3"
         ]
     }
 ]
