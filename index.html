@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <link rel="stylesheet" type="text/css" href="./css/tracklist.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/footer.css"/>
     <link rel="stylesheet" type="text/css" href="./css/grid.css"/>
     <script defer src="./lib/titlebar.js"></script>
     <script defer src="./lib/spotify.js"></script>
@@ -23,7 +24,12 @@
       <div id="footer">
         <table id="tracklist-footer">
           <td id="marquee"><marquee id="now-playing" scrollamount="2"></marquee></td>
-          <td id="total-tracks"></td>
+          <td id="all-tracks"><a onclick="displayAllTracks()">All</a></td>
+          <td id="albums"><a onclick="displayAllAlbums()">Albums</a></td>
+          <td id="playlists"><a onclick="displayAllPlaylists()">Playlists</a></td>
+          <td id="total-tracks">0 tracks</td>
+          <td id="total-duration">0 minutes</td>
+          <td></td>
         </table>
       </div>
     </div>

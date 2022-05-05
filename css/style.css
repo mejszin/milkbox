@@ -4,8 +4,5 @@ body {
 
 .window-title {
     font-family: sans-serif;
-}
-
-#now-playing {
-    width: 160px;
+    letter-spacing: 1px;
 }

@@ -28,27 +28,13 @@
     white-space: nowrap;
 }
 
-#tracklist-footer td {
-    font-family: sans-serif;
-    font-size: 0.65em;
-    letter-spacing: 1px;
-    padding: 0 12px;
-    border-right: 1px solid #CFCFCF;
-}
-
-td#marquee {
-    width: 160px;
-    padding: 0 0;
-    text-transform: lowercase;
-}
-
 audio, audio::-webkit-media-controls-panel {
     background-color: #ffffff; /*rgba(241, 243, 244, 1);*/
     width: 100%;
 }
 
 td.title {
-    width: 20%;
+    width: 30%;
 }
 
 td.artist {
@@ -60,17 +46,17 @@ td.album {
 }
 
 td.year {
-    width: 8%;
+    width: 7%;
 }
 
 td.genres {
     width: 25%;
 }
 
-td.track_no {
+/*td.track_no {
     width: 7%;
-}
+}*/
 
 td.duration {
-    width: 10%;
+    width: 8%;
 }
