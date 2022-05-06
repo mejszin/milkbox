@@ -38,7 +38,7 @@ audio, audio::-webkit-media-controls-panel {
 }
 
 td.title {
-    width: 30%;
+    width: 25%;
 }
 
 td.artist {
@@ -54,7 +54,16 @@ td.year {
 }
 
 td.genres {
-    width: 25%;
+    width: 20%;
+}
+
+td.buttons {
+    width: 10%;
+}
+
+#tracklist td.buttons {
+    cursor: pointer;
+    color: #007ACC;
 }
 
 /*td.track_no {
@@ -73,6 +82,8 @@ td.album_cover {
 td.album_cover img {
     max-width: 32px;
     max-height: 32px;
+    border: 1px solid #CFCFCF;
+    image-rendering: crisp-edges;
 }
 
 td.album_name {
