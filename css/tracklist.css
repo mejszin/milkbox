@@ -66,6 +66,10 @@ td.buttons {
     color: #007ACC;
 }
 
+#tracklist td.buttons i {
+    padding-right: 4px;
+}
+
 /*td.track_no {
     width: 7%;
 }*/
