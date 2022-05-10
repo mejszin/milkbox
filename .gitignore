@@ -1,4 +1,5 @@
 node_modules
+data/config.ini
 data/spotify_client_id
 data/spotify_client_secret
 data/users.json
