@@ -8,6 +8,7 @@
   },
   "author": "Louis Machin",
   "dependencies": {
+    "axios": "^0.27.2",
     "custom-electron-titlebar": "^3.2.7",
     "electron": "^13.6.3",
     "glob": "^8.0.1",
