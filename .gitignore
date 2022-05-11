@@ -2,3 +2,5 @@ node_modules
 data/config.ini
 data/spotify_client_id
 data/spotify_client_secret
+data/covers/*.png
+!data/covers/default.png
