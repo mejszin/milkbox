@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->    
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <title>milkbox</title>
+    <link rel="icon" type="image/x-icon" href="../data/favicon.ico">
+    <script defer src="../lib/submit_album.js"></script>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+    }
+    
+    .form {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 8px;
+    }
+
+    .across {
+      flex-direction: row;
+    }
+
+    button, input {
+      letter-spacing: 1px;
+    }
+
+    form {
+      padding: 0px;
+      margin-right: 12px;
+    }
+
+    input {
+      width: 100%;
+      max-width: 100%;
+      font-size: 0.65em;
+      padding: 2px 4px;
+      margin-bottom: 8px; 
+    }
+
+    input:last-child {
+      margin-bottom: 0;
+    }
+
+    button {
+      text-transform: lowercase;
+      margin-right: 8px;
+      font-size: 0.65em;
+    }
+  </style>
+  <body>
+    <div class="form">
+      <form>
+        <input name="artist" placeholder="artist name..." id="artist-input"></input>
+        <input name="album" placeholder="album name..." id="album-input"></input>
+        <input name="year" placeholder="year..." id="year-input"></input>
+        <input name="genres" placeholder="genres..." id="genres-input"></input>
+      </form>
+    </div>
+    <div class="form across">
+      <button onclick="submitAlbum()">Submit</button> 
+      <button onclick="cancelSubmit()">Cancel</button>
+    </div>
+  </body>
+</html>
