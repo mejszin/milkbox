@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
     <title>milkbox</title>
     <link rel="icon" type="image/x-icon" href="../data/favicon.ico">
-    <script defer src="../lib/modal/select_playlist.js"></script>
+    <script defer src="../lib/modal/set_alias.js"></script>
   </head>
   <style>
     body {
@@ -15,38 +15,53 @@
     
     .form {
       display: flex;
+      width: 100%;
       align-items: center;
+      flex-direction: column;
       justify-content: flex-start;
       padding-bottom: 8px;
     }
 
-    select, option, button {
-      text-transform: lowercase;
+    .across {
+      flex-direction: row;
+    }
+
+    button, input {
       letter-spacing: 1px;
     }
 
-    select { 
-      width: 100%;
-      font-size: 0.65em;
-      padding: 2px;
+    form {
+      padding: 0px;
+      margin-right: 12px;
     }
 
-    option {
-      font-size: 1.1em;
+    input {
+      width: 100%;
+      max-width: 100%;
+      font-size: 0.65em;
+      padding: 2px 4px;
+      margin-bottom: 8px; 
+    }
+
+    input:last-child {
+      margin-bottom: 0;
     }
 
     button {
+      text-transform: lowercase;
       margin-right: 8px;
       font-size: 0.65em;
     }
   </style>
   <body>
     <div class="form">
-      <select name="playlists" id="playlist-select"></select>
+      <form>
+        <input name="alias" placeholder="alias..." id="alias-input"></input>
+      </form>
     </div>
-    <div class="form">
-      <button onclick="selectPlaylist()">Select</button> 
-      <button onclick="cancelSelect()">Cancel</button>
+    <div class="form across">
+      <button onclick="setAlias()">Submit</button> 
+      <button onclick="cancelSet()">Cancel</button>
     </div>
   </body>
 </html>

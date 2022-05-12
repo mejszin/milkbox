@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
     <title>milkbox</title>
     <link rel="icon" type="image/x-icon" href="../data/favicon.ico">
-    <script defer src="../lib/submit_album.js"></script>
+    <script defer src="../lib/modal/cloud_menu.js"></script>
   </head>
   <style>
     body {
@@ -33,25 +33,9 @@
   <body>
     <div class="form">
       <button onclick="submitAlbum()">Submit album</button>
+      <button onclick="setAlias()">Set alias</button>
       <button onclick="openForum()">Open forum</button>
       <button onclick="hideModal()">Cancel</button>
     </div>
   </body>
-  <script>
-      const { ipcRenderer } = require('electron');
-      
-      function submitAlbum() {
-        hideModal();
-        ipcRenderer.send('show-submit-album', {});
-      }
-      
-      function openForum() {
-        hideModal();
-        ipcRenderer.send('open-forum', {});
-      }
-      
-      function hideModal() {
-        ipcRenderer.send('hide-cloud-menu', {});
-      }
-  </script>
 </html>
