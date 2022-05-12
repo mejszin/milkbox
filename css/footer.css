@@ -27,7 +27,7 @@ td#marquee {
     max-width: 80px;
 }
 
-#all-tracks, #albums, #playlists {
+#all-tracks, #albums, #playlists, #cloud {
     color: black;
     text-decoration: underline;
     cursor: pointer;

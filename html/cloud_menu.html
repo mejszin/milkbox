@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->    
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+    <title>milkbox</title>
+    <link rel="icon" type="image/x-icon" href="../data/favicon.ico">
+    <script defer src="../lib/submit_album.js"></script>
+  </head>
+  <style>
+    body {
+      overflow: hidden;
+    }
+    
+    .form {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    button {
+      width: 100%;
+      text-transform: lowercase;
+      font-size: 0.65em;
+      margin-left: 8px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  </style>
+  <body>
+    <div class="form">
+      <button onclick="submitAlbum()">Submit album</button>
+      <button onclick="openForum()">Open forum</button>
+      <button onclick="hideModal()">Cancel</button>
+    </div>
+  </body>
+  <script>
+      const { ipcRenderer } = require('electron');
+      
+      function submitAlbum() {
+        hideModal();
+        ipcRenderer.send('show-submit-album', {});
+      }
+      
+      function openForum() {
+        hideModal();
+        ipcRenderer.send('open-forum', {});
+      }
+      
+      function hideModal() {
+        ipcRenderer.send('hide-cloud-menu', {});
+      }
+  </script>
+</html>
