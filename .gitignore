@@ -1,7 +1,5 @@
 node_modules
 data/config.ini
 data/playlists.json
-data/spotify_client_id
-data/spotify_client_secret
 data/covers/
 !data/covers/default.png
