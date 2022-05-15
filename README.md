@@ -7,12 +7,10 @@ Local music client
 
 ### Installation
 
-```
-npm install
-```
-
-```
-npm start
+```bash
+$ git clone "https://github.com/milkbox-club/milkbox"
+$ npm install
+$ npm start
 ```
 
 ---
