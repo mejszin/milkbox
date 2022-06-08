@@ -25,6 +25,7 @@ td#marquee {
 #album img {
     max-height: 80px;
     max-width: 80px;
+    image-rendering: crisp-edges;
 }
 
 #all-tracks, #albums, #playlists, #cloud {

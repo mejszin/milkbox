@@ -14,14 +14,6 @@
     border-left: 1px solid #CFCFCF;
 }
 
-#header {
-    grid-area: header;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #CFCFCF;
-    border-bottom: 1px solid #CFCFCF;
-}
-
 #list {
     grid-area: list;
     overflow-x: hidden;
@@ -39,9 +31,8 @@
     display: grid;
     height: calc(100vh - 30px);
     grid-template-columns: 80px 1fr;
-    grid-template-rows: 24px 1fr 56px 24px;
+    grid-template-rows: 1fr 56px 24px;
     grid-template-areas:
-        "header header"
         "list list"
         "album player"
         "album footer";

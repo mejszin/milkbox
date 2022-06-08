@@ -1,9 +1,13 @@
-#tracklist, #tracklist-header, #tracklist-footer {
+#tracklist, #tracklist-footer {
     width: 100vw;
     border-collapse: collapse;
 }
 
 #tracklist tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#tracklist tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -11,16 +15,21 @@
     background-color: #d3eaf2;
 }
 
-#tracklist-header td {
+#tracklist tr.header th {
+    position: sticky;
+    text-align: left;
+    top: 0;
     font-family: sans-serif;
     font-size: 0.65em;
-    padding: 0 12px;
+    padding: 4px 12px;
     letter-spacing: 1px;
-    border-right: 1px solid #CFCFCF;
+    box-shadow: inset 0 1px 0 #CFCFCF, inset 0 -1px 0 #CFCFCF; /* Top and bottom borders*/
     text-transform: lowercase;
+    background-color: inherit;
 }
 
-#tracklist-header td:last-child {
+
+#tracklist tr.header th td:last-child {
     border-right: none;
 }
 
